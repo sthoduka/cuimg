@@ -11,6 +11,7 @@ ADD_DEFINITIONS(-std=c++0x -fopenmp -DNDEBUG -DNO_CUDA -DWITH_OPENCV -Ofast -O3 
 include_directories(${CMAKE_SOURCE_DIR}/../..)
 SET(sources main.cc)
 SET(CMAKE_VERBOSE_MAKEFILE ON)
+SET(CMAKE_CXX_FLAGS "-ggdb -O3 -fPIC -std=c++0x -march=native -mno-avx")
 
 ADD_EXECUTABLE(tracking_sample ${sources})
 target_link_libraries(tracking_sample ${OpenCV_LIBS} gomp)
