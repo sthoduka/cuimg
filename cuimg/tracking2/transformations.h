@@ -1,7 +1,7 @@
 #ifndef CUIMG_PYRLK_TRACKING_TRANSFORMATIONS_H_
 # define CUIMG_PYRLK_TRACKING_TRANSFORMATIONS_H_
 
-# include <Eigen/Dense>
+# include <eigen3/Eigen/Dense>
 # include <cuimg/copy.h>
 # include <cuimg/builtin_math.h>
 
